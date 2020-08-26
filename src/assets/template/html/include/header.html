@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- @if NODE_ENV='development' -->
+    <link rel="stylesheet" href="/assets/template/vendor/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/template/vendor/owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="/assets/template/vendor/scroller/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="/assets/template/css/main.css">
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='production' -->
+    <link rel="stylesheet" href="assets/template/css/app.min.css?v=2">
+    <!-- @endif -->
+</head>
+<body class="fixed">
+<div class="fixed-header">
+    <div class="topline">
+        <div class="container">
+            <div class="topline__grid">
+                <ul class="topline-menu">
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Гарантии</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Полезное</a></li>
+                </ul>
+                <div class="topline__address">
+                    Б.Сампсониевский, д.82,офис 1  с 9:00 до 18: 00 (пн-пт)
+                </div>
+                <div class="topline__email">
+                    <a href="mailto:zakaz@sitename.ru">zakaz@sitename.ru</a>
+                </div>
+                <div class="topline__phone">
+                    <a href="tel:8812999-99-99">8 (812) 999-99-99</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container phablet-container">
+            <div class="header__grid">
+                <div class="header__left phablet-container__inside">
+                    <div class="header__logo">
+                        <a href="/">
+                            <img src="/assets/template/images/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="header__burger toggle-menu-js">
+                        <a href="#" class="burger">
+                            <span class="burger__line-one"></span>
+                            <span class="burger__line-two"></span>
+                            <span class="burger__line-three"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__right phablet-container__inside">
+                    <div class="header__menu">
+                        <ul class="menu-top">
+                            <li><a href="#">Стиральные машины</a></li>
+                            <li><a href="#">Плиты</a></li>
+                            <li><a href="#">Холодильники</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__contacts">
+                        <div class="header-phone">8 (812) 999-99-99</div>
+                        <div class="header-worktime">с 9.00 до 18.00 (пн-пт)</div>
+                    </div>
+                    <div class="header__search">
+                        <div class="search" data-width="680px">
+                            <form action="">
+                                <input type="text" placeholder="Введите запрос">
+                                <button>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17.5 17.5L13.875 13.875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header__cart">
+                        <div id="msMiniCart" class="cart-top">
+                            <a href="#">
+                                <div class="count">2</div>
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 18.333a.833.833 0 100-1.666.833.833 0 000 1.666zM16.667 18.333a.833.833 0 100-1.666.833.833 0 000 1.666zM.833.833h3.334L6.4 11.992a1.666 1.666 0 001.667 1.341h8.1a1.666 1.666 0 001.666-1.341L19.167 5H5"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h20v20H0z"/></clipPath></defs></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="mobile-menu__grid">
+            <div class="mobile-menu__item mobile-menu__item--parent">
+                <a href="#">Каталог б/у техники <span class="mobile-menu__arrow"></span></a>
+                <div class="mobile-menu__childs">
+                    <div class="mobile-menu__child">
+                        <a href="#">Стиральные машины</a>
+                    </div>
+                    <div class="mobile-menu__child">
+                        <a href="#">Плиты</a>
+                    </div>
+                    <div class="mobile-menu__child">
+                        <a href="#">Холодильники</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu__item">
+                <a href="#">О компании</a>
+            </div>
+            <div class="mobile-menu__item">
+                <a href="#">Полезное</a>
+            </div>
+            <div class="mobile-menu__item">
+                <a href="#">Доставка и оплата</a>
+            </div>
+            <div class="mobile-menu__item">
+                <a href="#">Гарантии</a>
+            </div>
+            <div class="mobile-menu__item">
+                <a href="#">Услуги</a>
+            </div>
+            <div class="mobile-menu__item">
+                <a href="#">Контакты</a>
+            </div>
+        </div>
+    </div>
+</div>

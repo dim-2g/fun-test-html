@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- @if NODE_ENV='development' -->
+    <link rel="stylesheet" href="/assets/template/css/main.css">
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='production' -->
+    <link rel="stylesheet" href="assets/template/css/app.min.css?v=2">
+    <!-- @endif -->
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="packages">
+            <div class="packages__header">Ты сегодня покормил кота?</div>
+            <div class="packages__grid">
+                <div class="packages__item">
+                    <div class="package">
+                        <div class="package__card">
+                            <div class="package__top">
+                                <div class="package__header"></div>
+                            </div>
+                            <div class="package__middle">
+                                <div class="package__body">
+                                    <div class="package__description">
+                                        <div class="package__description--default">
+                                            Сказочное заморское яство
+                                        </div>
+                                        <div class="package__description--selected-hover">
+                                            Котэ не одобряет?
+                                        </div>
+                                    </div>
+                                    <div class="package__name">
+                                        Нямушка
+                                    </div>
+                                    <div class="package__name-with">
+                                        с фуа-гра
+                                    </div>
+                                    <div class="package__info">
+                                        <b>10</b> порций<br />
+                                        мышь в подарок
+                                    </div>
+                                </div>
+                                <div class="package__cat" style="background-image: url('/assets/template/images/package__cat.png')"></div>
+                                <div class="package-volume">
+                                    <div class="package-volume__digits">
+                                        0,5
+                                    </div>
+                                    <div class="package-volume__unit">
+                                        кг
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package__call">
+                            <div class="package__call--default">
+                                Чего сидишь? Порадуй котэ, <a href="#">купи.</a>
+                            </div>
+                            <div class="package__call--selected">
+                                Печень утки разварная с артишоками.
+                            </div>
+                            <div class="package__call--disabled">
+                                Печалька, с фуа-гра закончился.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="packages__item">
+                    <div class="package package--selected">
+                        <div class="package__card">
+                            <div class="package__top">
+                                <div class="package__header"></div>
+                            </div>
+                            <div class="package__middle">
+                                <div class="package__body">
+                                    <div class="package__description">
+                                        <div class="package__description--default">
+                                            Сказочное заморское яство
+                                        </div>
+                                        <div class="package__description--selected-hover">
+                                            Котэ не одобряет?
+                                        </div>
+                                    </div>
+                                    <div class="package__name">
+                                        Нямушка
+                                    </div>
+                                    <div class="package__name-with">
+                                        с рыбой
+                                    </div>
+                                    <div class="package__info">
+                                        <b>40</b> порций<br />
+                                        <b>2</b> мыши в подарок
+                                    </div>
+                                </div>
+                                <div class="package__cat" style="background-image: url('/assets/template/images/package__cat.png')"></div>
+                                <div class="package-volume">
+                                    <div class="package-volume__digits">
+                                        2
+                                    </div>
+                                    <div class="package-volume__unit">
+                                        кг
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package__call">
+                            <div class="package__call--default">
+                                Чего сидишь? Порадуй котэ, <a href="#">купи.</a>
+                            </div>
+                            <div class="package__call--selected">
+                                Печень утки разварная с артишоками.
+                            </div>
+                            <div class="package__call--disabled">
+                                Печалька, с фуа-гра закончился.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="packages__item">
+                    <div class="package package--disabled">
+                        <div class="package__card">
+                            <div class="package__top">
+                                <div class="package__header"></div>
+                            </div>
+                            <div class="package__middle">
+                                <div class="package__body">
+                                    <div class="package__description">
+                                        <div class="package__description--default">
+                                            Сказочное заморское яство
+                                        </div>
+                                        <div class="package__description--selected-hover">
+                                            Котэ не одобряет?
+                                        </div>
+                                    </div>
+                                    <div class="package__name">
+                                        Нямушка
+                                    </div>
+                                    <div class="package__name-with">
+                                        с курой
+                                    </div>
+                                    <div class="package__info">
+                                        <b>100</b> порций<br />
+                                        <b>5</b> мышей в подарок<br />
+                                        заказчик доволен
+                                    </div>
+                                </div>
+                                <div class="package__cat" style="background-image: url('/assets/template/images/package__cat.png')"></div>
+                                <div class="package-volume">
+                                    <div class="package-volume__digits">
+                                        5
+                                    </div>
+                                    <div class="package-volume__unit">
+                                        кг
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package__call">
+                            <div class="package__call--default">
+                                Чего сидишь? Порадуй котэ, <a href="#">купи.</a>
+                            </div>
+                            <div class="package__call--selected">
+                                Печень утки разварная с артишоками.
+                            </div>
+                            <div class="package__call--disabled">
+                                Печалька, с фуа-гра закончился.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- @if NODE_ENV='development' -->
+<script src="/assets/template/js/scripts.js"></script>
+<!-- @endif -->
+<!-- @if NODE_ENV='production' -->
+<script src="/assets/template/js/all.js?v=2"></script>
+<!-- @endif -->
+</body>
+</html>
+
+<!-- @if NODE_ENV='development' -->
+//= include/mediahelp.html
+<!-- @endif -->
