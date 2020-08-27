@@ -615,47 +615,20 @@ button {
   width: 320px;
   -ms-flex-negative: 0;
   flex-shrink: 0; }
-  .package__top {
-    position: relative;
-    padding-left: 45px; }
-    .package__top:before {
-      display: inline-block;
-      content: "";
-      width: 63px;
-      height: 45px;
-      background-color: #fff;
-      position: absolute;
-      top: 15px;
-      left: 8px;
-      border-width: 4px 0 0 0;
-      border-style: solid;
-      border-color: #1698d9;
-      -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      z-index: -1;
-      transition: all 0.2s cubic-bezier(0.3, 0, 0.2, 1); }
-  .package__header {
-    background-color: #fff;
-    height: 45px;
-    border-width: 4px 4px 0 0;
-    border-style: solid;
-    border-color: #1698d9;
-    border-top-right-radius: 10px;
-    transition: all 0.2s cubic-bezier(0.3, 0, 0.2, 1); }
-  .package__middle {
-    background-color: #fff;
-    border-width: 0 4px 4px 4px;
-    border-style: solid;
-    border-color: #1698d9;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 10px 45px;
-    position: relative;
-    height: 435px;
-    transition: all 0.2s cubic-bezier(0.3, 0, 0.2, 1); }
   .package__card {
-    cursor: pointer; }
+    cursor: pointer;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 30px, #1698d9 0) 0 0;
+    padding: 4px;
+    border-radius: 0 10px 10px 10px;
+    transition: all 0.2s cubic-bezier(0.3, 0, 0.2, 1); }
+  .package__inner {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 29px, #f2f2f2 0) 0 0;
+    height: 472px;
+    padding: 17px 45px 3px;
+    position: relative;
+    border-radius: 0 8px 8px 8px;
+    overflow: hidden;
+    transition: all 0.2s cubic-bezier(0.3, 0, 0.2, 1); }
   .package__call {
     color: #fff;
     font-size: 13px;
@@ -674,7 +647,6 @@ button {
     .package__call--disabled {
       display: none; }
   .package__body {
-    margin-top: -32px;
     position: relative;
     z-index: 2;
     transition: all 0.2s cubic-bezier(0.3, 0, 0.2, 1); }
@@ -697,7 +669,7 @@ button {
   .package__info {
     color: #666666;
     font-size: 14px;
-    line-height: 110%;
+    line-height: 120%;
     letter-spacing: -0.2px; }
   .package__cat {
     position: absolute;
@@ -708,29 +680,16 @@ button {
     bottom: 0;
     background-position: left bottom;
     background-repeat: no-repeat;
-    transition: all 0.2s cubic-bezier(0.3, 0, 0.2, 1);
-    border-bottom-left-radius: 5px; }
+    transition: all 0.2s cubic-bezier(0.3, 0, 0.2, 1); }
 
-.package--hover .package__top:before {
-  border-color: #2ea8e6; }
-
-.package--hover .package__header {
-  border-color: #2ea8e6; }
-
-.package--hover .package__middle {
-  border-color: #2ea8e6; }
+.package--hover .package__card {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 30px, #2ea8e6 0) 0 0; }
 
 .package--hover .package-volume {
   background-color: #2ea8e6; }
 
-.package--selected .package__top:before {
-  border-color: #d91667; }
-
-.package--selected .package__header {
-  border-color: #d91667; }
-
-.package--selected .package__middle {
-  border-color: #d91667; }
+.package--selected .package__card {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 30px, #d91667 0) 0 0; }
 
 .package--selected .package__call--default {
   display: none; }
@@ -741,14 +700,8 @@ button {
 .package--selected .package-volume {
   background-color: #d91667; }
 
-.package--selected-hover .package__top:before {
-  border-color: #e62e7a; }
-
-.package--selected-hover .package__header {
-  border-color: #e62e7a; }
-
-.package--selected-hover .package__middle {
-  border-color: #e62e7a; }
+.package--selected-hover .package__card {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 30px, #e62e7a 0) 0 0; }
 
 .package--selected-hover .package__call--default {
   display: none; }
@@ -766,14 +719,8 @@ button {
 .package--selected-hover .package-volume {
   background-color: #e62e7a; }
 
-.package--disabled .package__top:before {
-  border-color: #b3b3b3; }
-
-.package--disabled .package__header {
-  border-color: #b3b3b3; }
-
-.package--disabled .package__middle {
-  border-color: #b3b3b3; }
+.package--disabled .package__card {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 30px, #b3b3b3 0) 0 0; }
 
 .package--disabled .package__call {
   color: #ffff66; }
@@ -809,7 +756,8 @@ button {
   -ms-flex-direction: column;
   flex-direction: column;
   border-radius: 50%;
-  line-height: 100%; }
+  line-height: 100%;
+  transition: all 0.2s cubic-bezier(0.3, 0, 0.2, 1); }
   .package-volume__digits {
     text-align: center;
     font-size: 42px;

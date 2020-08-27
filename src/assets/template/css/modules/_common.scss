@@ -143,50 +143,21 @@ button{
 .package{
   width: 320px;
   flex-shrink: 0;
-
-  &__top{
-    position: relative;
-    padding-left: 45px;
-    &:before{
-      display: inline-block;
-      content: "";
-      width: 63px;
-      height: 45px;
-      background-color: #fff;
-      position: absolute;
-      top: 15px;
-      left: 8px;
-      border-width: 4px 0 0 0;
-      border-style: solid;
-      border-color: $blue;
-      transform: rotate(-45deg);
-      z-index: -1;
-      transition: $cubic02;
-    }
-  }
-  &__header{
-    background-color: #fff;
-    height: 45px;
-    border-width: 4px 4px 0 0;
-    border-style: solid;
-    border-color: $colorPackageDefault;
-    border-top-right-radius: 10px;
-    transition: $cubic02;
-  }
-  &__middle{
-    background-color: #fff;
-    border-width: 0 4px 4px 4px;
-    border-style: solid;
-    border-color: $colorPackageDefault;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 10px 45px;
-    position: relative;
-    height: 435px;
-    transition: $cubic02;
-  }
   &__card{
     cursor: pointer;
+    background: linear-gradient(135deg,rgba(0,0,0,0) 30px, $colorPackageDefault 0) 0 0;
+    padding: 4px;
+    border-radius: 0 10px 10px 10px;
+    transition: $cubic02;
+  }
+  &__inner{
+    background: linear-gradient(135deg,rgba(0,0,0,0) 29px,#f2f2f2 0) 0 0;
+    height: 472px;
+    padding: 17px 45px 3px;
+    position: relative;
+    border-radius: 0 8px 8px 8px;
+    overflow: hidden;
+    transition: $cubic02;
   }
   &__call{
     color: #fff;
@@ -211,7 +182,6 @@ button{
     }
   }
   &__body{
-    margin-top: -32px;
     position: relative;
     z-index: 2;
     transition: $cubic02;
@@ -239,7 +209,7 @@ button{
   &__info{
     color: #666666;
     font-size: 14px;
-    line-height: 110%;
+    line-height: 120%;
     letter-spacing: -0.2px;
   }
   &__cat{
@@ -252,22 +222,13 @@ button{
     background-position: left bottom;
     background-repeat: no-repeat;
     transition: $cubic02;
-    border-bottom-left-radius: 5px;
   }
 }
 
 .package--hover{
   .package{
-    &__top{
-      &:before{
-        border-color: $colorPackageHover;
-      }
-    }
-    &__header{
-      border-color: $colorPackageHover;
-    }
-    &__middle{
-      border-color: $colorPackageHover;
+    &__card{
+      background: linear-gradient(135deg,rgba(0,0,0,0) 30px, $colorPackageHover 0) 0 0;
     }
   }
   .package-volume{
@@ -277,16 +238,8 @@ button{
 
 .package--selected{
   .package{
-    &__top{
-      &:before{
-        border-color: $colorPackageSelected;
-      }
-    }
-    &__header{
-      border-color: $colorPackageSelected;
-    }
-    &__middle{
-      border-color: $colorPackageSelected;
+    &__card{
+      background: linear-gradient(135deg,rgba(0,0,0,0) 30px, $colorPackageSelected 0) 0 0;
     }
     &__call{
       &--default{
@@ -304,16 +257,8 @@ button{
 
 .package--selected-hover{
   .package{
-    &__top{
-      &:before{
-        border-color: $colorPackageSelectedHover;
-      }
-    }
-    &__header{
-      border-color: $colorPackageSelectedHover;
-    }
-    &__middle{
-      border-color: $colorPackageSelectedHover;
+    &__card{
+      background: linear-gradient(135deg,rgba(0,0,0,0) 30px, $colorPackageSelectedHover 0) 0 0;
     }
     &__call{
       &--default{
@@ -340,16 +285,8 @@ button{
 
 .package--disabled{
   .package{
-    &__top{
-      &:before{
-        border-color: $colorPackageDisabled;
-      }
-    }
-    &__header{
-      border-color: $colorPackageDisabled;
-    }
-    &__middle{
-      border-color: $colorPackageDisabled;
+    &__card{
+      background: linear-gradient(135deg,rgba(0,0,0,0) 30px, $colorPackageDisabled 0) 0 0;
     }
     &__call{
       color: $yellow;
@@ -387,6 +324,7 @@ button{
   flex-direction: column;
   border-radius: 50%;
   line-height: 100%;
+  transition: $cubic02;
   &__digits{
     text-align: center;
     font-size: 42px;
