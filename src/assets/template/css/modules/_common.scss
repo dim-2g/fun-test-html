@@ -109,7 +109,9 @@ button{
   padding-top: 37px;
   display: flex;
   height: 100%;
-  align-items: center;
+  @media($bp-larger-than-desktophd) {
+      align-items: center;
+  }
 }
 .maintext-bottom p{
   color: #fff;
